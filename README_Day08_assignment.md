@@ -1,77 +1,88 @@
- # Earthquake Data Analysis (1965-2016)
+# **Earthquake Data Analysis (1965-2016)**
 
- For Day 08 assignment, I downloaded the Significant Earthquakes 1965-2016 database from Kaggle (https://www.kaggle.com/datasets/usgs/earthquake-database). 
+For Day 08 assignment, I downloaded the **[Significant Earthquakes 1965-2016](https://www.kaggle.com/datasets/usgs/earthquake-database)** dataset from Kaggle. 
 
  ## About the dataset
 
- This dataset includes a record of the date, time, location, depth, magnitude, and source of every earthquake with a reported magnitude 5.5 or higher since 1965. 
- The data has been collected by The National Earthquake Information Center (NEIC). 
+This dataset includes a record of the date, time, location, depth, magnitude, and source of every earthquake with a reported magnitude 5.5 or higher since 1965 till 2016. 
+The data has been collected by The National Earthquake Information Center (NEIC). 
 
  ## Analysis performed
 
-1. Gutenberg–Richter Law (Magnitude vs Frequency):
+1. **Gutenberg–Richter Law (Magnitude vs Frequency)**
 
-   It is a classic law in seismology that states earthquake frequency decreases exponentially with magnitude.
+   * It is a classic law in seismology that states earthquake frequency decreases exponentially with magnitude.
 
-   This plot produces a straight line that indicates → strong scientific validation plot.
+   * This plot produces a straight line that indicates → strong scientific validation plot.
 
-2. Depth vs Magnitude Relationship
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/37b74a9b-9ef1-408e-8a49-94369bd8f32c" />
+
+2. **Depth vs Magnitude Relationship**
   
-   To analyze whether deeper earthquakes are generally stronger.
+   * To analyze whether deeper earthquakes are generally stronger.
 
-3. Distribution of Earthquakes Magnitudes
-4. Number of Earthquakes globally per Year
+3. **Distribution of Earthquakes Magnitudes**
 
-5. Earthquake Density Map (Latitude × Longitude)
+   * Compares the frequency of earthquake occurence against their magnitudes
+   * The histogram represents an inverse relationship i.e. earthquakes with higher magnitudes have a lower occurence frequency and vice-versa.
+   
+4. **Number of Earthquakes per Year**
 
-   This plot offers visualization that uses a geographic coordinate system to show the spatial concentration of earthquake epicenters over a specific area and period.
+   * Line plot that depicts the occurence of earthquakes globally every year
 
-   Essentially, it highlights the areas on the Earth's surface where earthquakes occur most frequently. 
+5. **Earthquake Density Map (Latitude × Longitude)**
 
-6. Energy Release Estimation
+   * This plot offers visualization that uses a geographic coordinate system to show the spatial concentration of earthquake epicenters over a specific area and period.
+
+   * Essentially, it highlights the areas on the Earth's surface where earthquakes occur most frequently. 
+
+6. **Energy Release Estimation**
   
-   Rule followed= log10(𝐸) = 1.5𝑀 + 4.8
+   * Rule followed= log10(𝐸) = 1.5𝑀 + 4.8
 
-   The equation is the Gutenberg-Richter relation (or similar energy-magnitude relation) which links the magnitude of an earthquake to the seismic energy it radiates.
+   * The equation is the Gutenberg-Richter relation (or similar energy-magnitude relation) which links the magnitude of an earthquake to the seismic energy it radiates.
 
-7. Temporal Clustering & Aftershock Behavior
+7. **Temporal Clustering & Aftershock Behavior**
 
-   Temporal clustering refers to the tendency for earthquakes to group together in time, with periods of high activity followed by relative quiet.
+   * Temporal clustering refers to the tendency for earthquakes to group together in time, with periods of high activity followed by relative quiet.
 
-   This phenomenon is most prominently observed in aftershock sequences, which are series of smaller earthquakes that follow a larger "mainshock" as the Earth's crust adjusts to the sudden stress change. 
+   * This phenomenon is most prominently observed in aftershock sequences, which are series of smaller earthquakes that follow a larger "mainshock" as the Earth's crust adjusts to the sudden stress change. 
 
-   A rolling window highlights clustering
+   * A rolling window highlights clustering
 
-8. Azimuthal Gap Analysis (Network Geometry Quality)
+8. **Azimuthal Gap Analysis**
 
-    Azimuthal gap analysis in seismology evaluates how well seismic stations surround an earthquake's epicenter, measuring the largest angle between adjacent stations from the epicenter.
+    * Azimuthal gap analysis in seismology evaluates how well seismic stations surround an earthquake's epicenter, measuring the largest angle between adjacent stations from the epicenter.
   
-    Lower gap → better location accuracy
+    * Lower the gap → better location accuracy
 
-9. Azimuthal Gap vs Magnitude
+9. **Azimuthal Gap vs Magnitude**
 
-    Compares the azimuthal gap with the magnitude of the earthquake
+    * Compares the azimuthal gap with the magnitude of the earthquake
 
-10. Global Earhtquake map
+10. **Global Earhtquake map**
 
-    Generates an interactive map of the world highlighting most prominent areas prone to seismological activities globally
+    * Generates an interactive map of the world highlighting most prominent areas prone to seismological activities globally
+
+ <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/accf71d9-17d4-48b7-92c6-ecea640ec44d" />
  
 
- ## Files
+ ## Files required
 
  1. database.csv.zip (downloaded from Kaggle- https://www.kaggle.com/datasets/usgs/earthquake-database)
- 2. database.csv (Unzipped and extracted file)
+ 2. database.csv (Unzipped and extracted file using Python v3.14)
  3. earthquake-data-analysis-final.ipynb (Python file run on Jupyter)
 
  ## Installations
 
  1. Anaconda
  2. Jupyter Notebook
- 3. numpy as np
- 4. pandas as pd 
- 5. matplotlib.pyplot as plt
- 6. seaborn as sns
- 7. folium
+ 3. Python v3.13+
+ 4. numpy
+ 5. pandas
+ 6. matplotlib.pyplot
+ 7. seaborn
+ 8. folium
  
 
  ## Steps performed
