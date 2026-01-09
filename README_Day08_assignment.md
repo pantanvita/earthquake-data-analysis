@@ -60,12 +60,15 @@ The data has been collected by The National Earthquake Information Center (NEIC)
 
     * Compares the azimuthal gap with the magnitude of the earthquake
 
-10. **Global Earhtquake map**
+10. **Global Earthquake map**
 
     * Generates an interactive map of the world highlighting most prominent areas prone to seismological activities globally
 
  <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/accf71d9-17d4-48b7-92c6-ecea640ec44d" />
- 
+
+**NOTE:** 
+This map cannot be viewed on GitHub as GitHub cannot render Folium inside notebooks. 
+To view the map, run the script on your platform.
 
  ## Files required
 
