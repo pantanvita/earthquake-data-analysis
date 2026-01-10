@@ -38,7 +38,7 @@ The data has been collected by The National Earthquake Information Center (NEIC)
 
 6. **Energy Release Estimation**
   
-   * Rule followed= log10(𝐸) = 1.5𝑀 + 4.8
+   * Rule followed: log10(𝐸) = 1.5𝑀 + 4.8
 
    * The equation is the Gutenberg-Richter relation (or similar energy-magnitude relation) which links the magnitude of an earthquake to the seismic energy it radiates.
 
@@ -80,7 +80,7 @@ To view the map, run the script on your platform.
 
  1. Anaconda
  2. Jupyter Notebook
- 3. Python v3.13+
+ 3. Python v3.9+
  4. numpy
  5. pandas
  6. matplotlib.pyplot
