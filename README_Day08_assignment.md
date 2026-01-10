@@ -72,9 +72,9 @@ To view the map, run the script on your platform.
 
  ## Files required
 
- 1. database.csv.zip (downloaded from Kaggle- https://www.kaggle.com/datasets/usgs/earthquake-database)
- 2. database.csv (Unzipped and extracted file using Python v3.14)
- 3. earthquake-data-analysis-final.ipynb (Python file run on Jupyter)
+ 1. `database.csv.zip` (downloaded from Kaggle- https://www.kaggle.com/datasets/usgs/earthquake-database)
+ 2. `database.csv` (Unzipped and extracted file using Python v3.14)
+ 3. `earthquake-data-analysis-final.ipynb` (Python file run on Jupyter)
 
  ## Installations
 
